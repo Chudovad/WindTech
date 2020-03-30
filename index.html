@@ -1,0 +1,637 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <script src="calc\jquery.maskedinput.js" type="text/javascript"></script>
+    <script src="calc\jquery.maskedinput.min.js" type="text/javascript"></script>
+
+
+    <title>ВиндТех</title>
+
+</head>
+
+<body>
+    <!-- Sprite -->
+    <svg style="display: none;">
+
+        <symbol id="facebook" viewBox="0 0 430.113 430.114">
+            <g>
+                <path
+                    d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z" />
+            </g>
+        </symbol>
+        <symbol id="viber" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956
+                     5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z" />
+                <path
+                    d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z" />
+                <path
+                    d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z" />
+                <path
+                    d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z" />
+                <path
+                    d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z" />
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0" />
+                    <path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187
+                 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 
+                 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 
+                 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 
+                 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 
+                 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 
+                 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375
+                  75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 
+                  17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0" />
+                    <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031
+                 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437
+                  3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812
+                   60.605469s-.167969 44.929688-.886719 60.605469zm0 0" />
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="vk" viewBox="0 0 97.75 97.75">
+            <g>
+                <path d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+		 M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883
+		l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604
+		c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089
+		c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625
+		c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037
+		c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762
+		c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455
+		c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946
+		l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794
+		c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058
+		c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471
+		C71.48,50.992,71.611,52.155,73.667,54.161z" />
+            </g>
+        </symbol>
+
+    </svg>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="link" href="index.html"><img src="img/windtech-logo.png" alt=""></a>
+                </div>
+
+                <nav class="nav__head" id="nav__head">
+                    <a class="nav__link" href="#" data-scroll="#features">Виды окон</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Наши работы</a>
+                    <a class="nav__link" href="#" data-scroll="#reviews">Используемые профили</a>
+                    <a class="nav__link" href="#" data-scroll="#request">Заказать звонок</a>
+                    <a class="nav__link" href="#" data-scroll="#footer" >Связаться с нами</a>
+                    <a class="nav__link" href="tel:+375296783450">+375 (29) 678-34-50(a1)</a>
+                    <a class="nav__link" href="okna_pvh.html" title="Расчитать стоимость окна"><img class="calc_ico" src="img/calculator.png" ></a>
+                    </nav>
+                    <nav class="nav__head__menu" id="nav__head__menu">
+                        <a class="nav__link" href="#" data-scroll="#features">Виды окон</a>
+                        <a class="nav__link" href="#" data-scroll="#works">Наши работы</a>
+
+                        <a class="nav__link" href="#" data-scroll="#reviews">Используемые профили</a>
+                        <a class="nav__link" href="#" data-scroll="#request">Заказать звонок</a>
+                        <a class="nav__link" href="#" data-scroll="#footer" >Связаться с нами</a>
+                        <a class="nav__link" href="tel:+375296783450">+375 (29) 678-34-50(a1)</a>
+                    </nav>
+                
+                <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" onchange='showOrHide("checkbox1", "nav__head__menu");'>
+        <label for="checkbox1">
+            <div class="hamburger hamburger1">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Окна ПВХ в Могилёве</h1>
+                <h2 class="intro__subtitle">Мы изготавливаем только качественные ПВХ окна, используя профили Rehau, Veka, Salamander
+                    и Brusbox. Быстрая работа, низкие цены. Бесплатный заказ замерщика</h2>
+                <a class="btn  btn--red" href="okna_pvh.html" title="Расчитать стоимость окна">Калькулятор окон</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Features -->
+    <h2 id="features" class="feature__title__head">Окна ПВХ</h2>
+    <div class="container">
+        <div class="features">
+            <div class="features__item">
+                <a href="okna_pvh.html" title="Расчитать стоимость окна">
+                    <img class="features__icon" src="img/windows/window-1.png" alt="">
+                </a>
+                <h4 class="features__title">ОДНОСТВОРЧАТОЕ окно стандартного размера</h4>
+                <div class="features__text">150руб</div>
+                <div class="features__text">Цена с установкой</div>
+                <a class="btn  btn--red" href="#" data-scroll="#request">Заказать</a>
+                <a class="btn  btn--red" href="okna_pvh.html" title="Расчитать стоимость окна">Калькулятор окон</a>
+            </div>
+
+            <div class="features__item">
+                <a href="okna_pvh.html" title="Расчитать стоимость окна">
+                    <img class="features__icon" src="img/windows/window-2.png" alt="">
+                </a>
+                
+                <h4 class="features__title">ДВУХСТВОРЧАТОЕ окно С ОДНОЙ ГЛУХОЙ СТВОРКОЙ</h4>
+                <div class="features__text">240руб</div>
+                <div class="features__text">Цена с установкой</div>
+                <a class="btn  btn--red" href="#" data-scroll="#request">Заказать</a>
+                <a class="btn  btn--red" href="okna_pvh.html" title="Расчитать стоимость окна">Калькулятор окон</a>
+            </div>
+
+            <div class="features__item">
+                <a href="okna_pvh.html" title="Расчитать стоимость окна">
+                    <img class="features__icon" src="img/windows/window-3.png" alt="">
+                </a>
+                
+                <h4 class="features__title">ДВУХСТВОРЧАТОЕ окно C ДВУМЯ ОТКРЫВАЮЩИМИСЯ СТВОРКАМИ</h4>
+                <div class="features__text">290руб</div>
+                <div class="features__text">Цена с установкой</div>
+                <a class="btn  btn--red" href="#" data-scroll="#request">Заказать</a>
+                <a class="btn  btn--red" href="okna_pvh.html" title="Расчитать стоимость окна">Калькулятор окон</a>
+            </div>
+
+            <div class="features__item4">
+                <a href="okna_pvh.html" title="Расчитать стоимость окна">
+                    <img class="features__icon4" src="img/windows/window-4.png" alt="">
+                </a>
+                <h4 class="features__title">ТРЕХСТВОРЧАТОЕ окно</h4>
+                <div class="features__text">340руб</div>
+                <div class="features__text">Цена с установкой</div>
+                <a class="btn  btn--red" href="#" data-scroll="#request">Заказать</a>
+                <a class="btn  btn--red" href="okna_pvh.html" title="Расчитать стоимость окна">Калькулятор окон</a>
+            </div>
+
+            <div class="features__item4">
+                <a href="okna_pvh.html" title="Расчитать стоимость окна">
+                    <img class="features__icon4" src="img/windows/window-5.png" alt="">
+                </a>
+                <h4 class="features__title">БАЛКОННАЯ РАМА И 4 СТВОРКИ</h4>
+                <div class="features__text">480руб</div>
+                <div class="features__text">Цена с установкой</div>
+                <a class="btn  btn--red" href="#" data-scroll="#request">Заказать</a>
+                <a class="btn  btn--red" href="okna_pvh.html" title="Расчитать стоимость окна">Калькулятор окон</a>
+            </div>
+        </div><!-- /.features -->
+    </div><!-- /.container -->
+
+
+
+    <!-- Works -->
+
+    <h2 id="works" class="feature__title__head">Наши работы</h2>
+    <div class="works">
+
+        <div class="works__item">
+            <a href="ru\kitchen.html">
+                <img class="works__photo" src="img/works/kitchen.jpg" alt="">
+                <div class="works__content">
+                    <div class="text">
+                        <div class="works__title">Окно в кухню</div>
+                        <div class="works__text">Всё самое интересное и важное происходит на кухне</div>
+                    </div>
+                    <button class="btn__work">></button>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="ru\kitchen.html">
+                <img class="works__photo" src="img/works/balcony.jpg" alt="">
+                <div class="works__content">
+                    <div class="text">
+                        <div class="works__title">Остекление балконов</div>
+                        <div class="works__text">Уютный балкон зимой и летом</div>
+                    </div>
+                    <button class="btn__work">></button>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="ru\kitchen.html">
+                <img class="works__photo" src="img/works/children.jpg" alt="">
+                <div class="works__content">
+                    <div class="text">
+                        <div class="works__title">Окно в детскую</div>
+                        <div class="works__text">Детская комната — это большой мир маленького человека. И этот мир должен быть
+                            красивым, удобным и защищённым.
+                        </div>
+                    </div>
+                    <button class="btn__work">></button>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="ru\kitchen.html">
+                <img class="works__photo" src="img/works/house.jpg" alt="">
+                <div class="works__content">
+                    <div class="text">
+                        <div class="works__title">Пластиковые окна для частного дома</div>
+                        <div class="works__text">Красивые виды, свежий воздух, тишина.</div>
+                    </div>
+                    <button class="btn__work">></button>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="ru\kitchen.html">
+                <img class="works__photo" src="img/works/hall.jpg" alt="">
+                <div class="works__content">
+                    <div class="text">
+                        <div class="works__title">Балконный блок ПВХ</div>
+                        <div class="works__text">Балконный блок в наших домах может находиться в любой комнате — гостиной,
+                            спальне, детской и на кухне.
+                        </div>
+                    </div>
+                    <button class="btn__work">></button>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="ru\kitchen.html">
+                <img class="works__photo" src="img/works/bedroom.jpg" alt="">
+                <div class="works__content">
+                    <div class="text">
+                        <div class="works__title">Окно в спальню</div>
+                        <div class="works__text">Любимое место в доме — тихая и тёплая спальня</div>
+                    </div>
+                    <button class="btn__work">></button>
+                </div>
+            </a>
+
+        </div>
+    </div><!-- /.works -->
+
+
+
+    <!-- Testimonials -->
+    <!-- <h2 id="team" class="team__head">Отзывы</h2>
+    <div class="team">
+        <div class="container">
+            <div class="team__inner">
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/reviews/review-1.jpg" alt="">
+                    <div class="team__name">Светлана Иосифовна</div>
+                    <div class="team__prof">Могилёв</div>
+                    <div class="team__text">
+                        <p>На балконе зимой постоянно холодно, поэтому решила сменить рамы балконные, чтобы было тепло.
+                            Пришлось потратить уйму времени, чтобы найти тот вариант, который мне идеально подошел бы.
+                            Сразу подкупило, что рама балконная из экологически чистого пластика и демократичная цена.
+                            Специалисты с компании быстро приехали и за день установили рамы. На балконе стало гораздо
+                            теплее,
+                            муж теперь может спокойно курить, не надевая куртки. Шум с улицы не слышен, щелей нет.
+                            Балкон надежно защищен от снега и дождя.
+                            Очень надеюсь, что рамы простоят долгое время, но пока что никаких нареканий и замечаний
+                            нет.</p>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/reviews/review-2.jpg" alt="">
+                    <div class="team__name">Владимир Кожевников</div>
+                    <div class="team__prof">Могилёв</div>
+                    <div class="team__text">
+                        <p>Постоянно откладывали ремонт, но теперь появилось немного свободного времени, так что решили
+                            заняться отделкой балкона. Недолго выбирали компанию, так как ее подсказали нам друзья.
+                            Позвонили, договорились о встрече с сотрудниками. Приехали, посмотрели балкон, сняли мерки и
+                            уточнили детали. Мы сделали деревянную отделку балкона, так что немного повозились с выбором
+                            материала и цвета. Хотели подобрать натуральные и экологические материалы, чтобы и красиво
+                            было, и полезно. Нам сразу же подсчитали стоимость работы и время, за которое все будет
+                            готово. Очень довольны! Работа качественная и быстрая, а мы смогли насладиться отпуском.</p>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/reviews/review-3.jpg" alt="">
+                    <div class="team__name">Ольга Сергеевна</div>
+                    <div class="team__prof">Горки</div>
+                    <div class="team__text">
+                        <p>Давно в доме нужно было сменить окна. Тянули с этим долгое время, но все же решились
+                            поставить новые окна ПВХ. К выбору подошли основательно. Пересмотрели много моделей, фирм,
+                            прочли много мнений людей (все неоднозначные). Все же цены на окна ПВХ не маленькие, а
+                            хотелось получить действительно качественные окна! Проконсультировались с менеджерами о
+                            понравившейся модели, расспросили все детали и оформили заявку. Специалисты приехали быстро,
+                            смонтировали все за день. Проблем нет никаких, главное, что в доме теперь гораздо теплее,
+                            чем было раньше. Нареканий на сборку и качество окон нет никаких!</p>
+                    </div>
+
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/reviews/review-4.jpg" alt="">
+                    <div class="team__name">Ирина Колесникова</div>
+                    <div class="team__prof">Могилёв</div>
+                    <div class="team__text">
+                        <p>Решили с супругом сменить дома окна. Выбор пал на окна брюгман. Мы проконсультировались с
+                            менеджерами компании, они рассказали о преимуществах, и мы доверились и оформили заказ. Нас
+                            не обманули! Приехали монтажники и за день все установили. Работа была сделана быстро и
+                            качественно, а главное результат был виден сразу. Окна брюгман действительно качественные и
+                            экологически чистые, кроме того они еще и теплоизоляционные. Щелей нет, и в доме стало
+                            гораздо теплее. Промерзаний никаких нет, а это означает, что окна прослужат долго. Теперь
+                            подумываем и родителям сменить старые окна на новые!</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+end team -->
+  
+
+
+    <!-- Profiles -->
+
+    <!-- </div> -->
+    <h2 id="reviews" class="feature__title__head">Используемые профили</h2>
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__slider" id="reviewsSlider">
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/profiles/profile-1.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__author">Brusbox</div>
+                            <div class="reviews__text">Современные окна, фасады, балконные и входные двери из профильных 
+                                систем BRUSBOX имеют многочисленные преимущества. 
+                                Важные требования, такие как теплоизоляция, взломобезопасность, звукоизоляция 
+                                учитываются индивидуально и полностью соответствуют особенностям объекта строительства, 
+                                на котором они применяются.
+                                Оконные системы BRUSBOX отличаются долговечностью, современным дизайном, легкостью в уходе.</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/profiles/profile-2.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__author">Rehau</div>
+                            <div class="reviews__text">Продукция компании Rehau известна во всем мире как высококачественная, 
+                                износостойкая, долговечная и с адекватной стоимостью.
+                                Наряду с высокими качественными и техническими характеристиками одной из причин его востребованности 
+                                можно назвать широкий ассортимент моделей, разработанных компанией для того, чтобы удовлетворить любые 
+                                потребности покупателей.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/profiles/profile-3.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__author">Salamander</div>
+                            <div class="reviews__text">Элитный профиль Salamander предназначен для сборки теплых и тихих 
+                                окон премиум-категории. На текущий момент это лучшее предложение из всей представленной 
+                                на белорусском рынке линейки Salamander. Системы рассчитаны на монтаж трехкамерных 
+                                стеклопакетов, поэтому изготовленные из них окна обладают самой высокой 
+                                энергоэффективностью.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/profiles/profile-4.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__author">VEKA</div>
+                            <div class="reviews__text">Производитель пластикового профиля для остекления жилых и офисных 
+                            помещений компания VEKA предлагает широкий выбор вариантов профиля ПВХ.
+                            Системы профилей VEKA — это надёжность, качество и доступность. Это тёплое решение для уюта в каждом доме. 
+                            Это профиль, которому доверяют!
+                            Все профили VEKA производятся в соответствии с требованиями высшего класса качества немецкого стандарта DIN EN 12608 — класса А.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /.reviews -->
+<!-- Form -->
+<h2 id="request" class="feature__title__head">Оставить заявку</h2>
+<div class="form__test">
+    <form class="transparent">
+    <div class="form-inner">
+        
+            <h3>Заполните форму и мы свяжемся с вами</h3>
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="ВиндТех">
+            <input type="hidden" name="admin_email" value="windtech@s262646.smrtp.ru">
+            <input type="hidden" name="form_subject" value="Form">
+            <!-- Form -->
+            <label for="text">Ваше имя</label>
+            <input required id="text" type="text" name="Имя">
+            <label>Ваш номер телефона</label>
+            <input required type="tel" id="tel" name="Номер телефона" >
+            <script>
+            $(function() {
+                $("#tel").mask("(999) 999-9999");
+            });
+            </script>
+            <label>Удобное время звонка</label>
+            <div class="form__time">
+                <label>C</label>
+                <input id="time" type="time" name="Время с " value="now">
+                <label>До</label>
+                <input id="time" type="time" name="Время до" value="now">
+            </div>
+            <div class="form__checkbox">
+                <input type="checkbox" id="checkbox" name="Позвонить сейчас">
+                <label class="checkbox__label" for="checkbox">Позвонить сейчас</label>
+            </div>
+            <!-- <label>Профиль</label>
+            <select name="Профиль">
+                <option value="Salamander">Salamander</option>
+                <option value="Brugmann">Brugmann</option>
+                <option value="Montblanc">Montblanc</option>
+            </select>
+            <label>Вариант окна</label>
+            <select name="Вид окна">
+                <option value="Одностворчатое">Одностворчатое</option>
+                <option value="Двухстворчатое окно с одной глухой створкой">Двухстворчатое окно с одной глухой створкой</option>
+                <option value="Двухстворчатое окно с одной с двумя открывающимися створками">Двухстворчатое окно с одной с двумя открывающимися створками</option>
+                <option value="Трёхстворчатое окно">Трёхстворчатое окно</option>
+                <option value="Балконная рама и 4 створки">Балконная рама и 4 створки</option>
+            </select>
+            <label>Стеклопакет</label>
+            <select name="Камера">
+                <option value="Однокамерное">Однокамерное</option>
+                <option value="Двухкамерное">Двухкамерное</option>
+            </select> -->
+            
+            <button id="myBtn" type="submit">Отправить</button>
+            
+            
+    </div>
+</form>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer" >
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__title">Расположение и контакты</h4>
+                    <address class="footer__address">
+                        <div>212022, Республика Беларусь, г. Могилев</div>
+                        <div>ул. Лазаренко, 55а/16-2</div>
+                        <div><a class="nav__link" href="tel:+375296783450">+375 (29) 678-34-50(a1)</a></div>
+                        <div><a class="nav__link" href="tel:+375291279088">+375 (29) 127-90-88(mts)</a></div>
+                        <div><a class="nav__link" href="mailto:wind.tech0@yandex.by">wind.tech0@yandex.by</a></div>
+                    </address>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Ссылки на соц. сети</h4>
+                    <div class="social  social--footer">
+                        <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.instagram.com/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://www.vk.com/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">О нас</h4>
+                    <div class="footer__text">
+                        <p>Самые низкие цены в Могилёве. Окна от лучших производителей. Качественная и быстрая
+                            установка.</p>
+                    </div>
+                </div>
+            </div><!-- /.footer__inner -->
+
+        </div><!-- /.container -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">
+                    <div>Copyright © 2019 ВиндТех. All Rights Reserved</div>
+                    <div>Made <span>by Vadim Chudinovich</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+
+    <div id="msg_pop" class="msg_pop" >
+        <span class="msg_close" onclick="document.getElementById('msg_pop').style.display='none'; return false;">X</span>
+        <div class="form__zamer">
+            <form class="transparent__zamer">
+                <div class="form-inner-zamer">
+                    <h3>Заказать замерщика</h3>
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="ВиндТех">
+                    <input type="hidden" name="admin_email" value="windtech@s262646.smrtp.ru">
+                    <input type="hidden" name="form_subject" value="Вызов замерщика">
+                    <!-- Form -->
+                    <label for="name">Ваше имя</label>
+                    <input required id="name" type="name" name="Имя">
+                    <label for="tel_zamer">Ваш номер телефона</label>
+                    <input required type="tel" id="tel_zamer" name="Номер телефона">
+                    <label for="town">Город</label>
+                    <select class="form-inner-zamer" name="Город" id="town">
+                        <option value="Минск">Минск</option>
+                        <option value="Могилёв">Могилёв</option>
+                        <option value="Гродно">Гродно</option>
+                        <option value="Брест">Брест</option>
+                        <option value="Гомель">Гомель</option>
+                        <option value="Витебск">Витебск</option>
+                    </select>
+                    <label for="street">Адрес</label>
+                    <input type="text" id="street" name="Адрес">
+                    <button id="myBtn" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<div type="button" class="callback-bt" href="#" data-scroll="#request">
+    <div class="text-call">
+        <p>Заказать звонок</p>
+    </div>
+</div>
+
+    <div type="button" class="email-bt" onclick="document.getElementById('msg_pop').style.display='block'; return false;">
+        <div class="text-call">
+            <p>Вызвать замерщика</p>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <!-- <script src="calc/jquery.min.js" type="text/javascript"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- <script src="slick/slick.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

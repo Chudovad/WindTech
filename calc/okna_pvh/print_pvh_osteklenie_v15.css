@@ -1,0 +1,465 @@
+table {
+    border: solid 1px #ccc;
+    margin: 5px
+}
+
+tr {
+    border: 0
+}
+
+td {
+    border: 0;
+    border-bottom: solid 1px #ddd
+}
+
+th {
+    border: solid 1px #ddd;
+    background: #eee
+}
+
+#price1,
+#price2,
+#price3 {
+    color: #fff;
+    font-size: 0.5em;
+    line-height: 0.3em
+}
+
+#header_cart table {
+    border: 0
+}
+
+#header_cart tr {
+    border: 0
+}
+
+#inp_w input,
+#inp_h input {
+    background: #fff;
+    cursor: pointer;
+    width: 36px;
+    height: 30px;
+    font-size: 10px;
+    border: none;
+    text-align: center;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#inp_h input {
+    margin-left: 10px
+}
+
+#inp_w {
+    width: 100%;
+    height: 15px;
+    border-bottom: solid 1px #ccc;
+    position: relative
+}
+
+#inp_h {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: -50px;
+    border-right: solid 1px #ccc;
+    float: left
+}
+
+.pr_1,
+.pr_2,
+.pr_3,
+.pr_4,
+.pr_5,
+.pr_6,
+.pr_7,
+.pr_8,
+.pr_9,
+.pr_10,
+.pr_11,
+.pr_12,
+.pr_13,
+.pr_14,
+.pr_15,
+.pr_16,
+.pr_17,
+.pr_18,
+.pr_19 {
+    position: relative;
+    border: outset 1px #aaa;
+    height: 100%;
+    margin: 18px auto;
+    padding: 5px
+}
+
+.pr_1_0,
+.pr_2_1,
+.pr_2_2,
+.pr_3_1,
+.pr_3_2,
+.pr_3_3,
+.pr_4_1,
+.pr_4_2,
+.pr_4_3,
+.pr_4_4 {
+    float: left;
+    border: inset 1px #aaa;
+    height: 99%
+}
+
+.pr_2_2,
+.pr_3_2,
+.pr_3_3,
+.pr_4_2,
+.pr_4_3,
+.pr_4_4 {
+    margin-left: 5px
+}
+
+.pr_5_51,
+.pr_5_52,
+.pr_6_61,
+.pr_6_52,
+.pr_7_11,
+.pr_7_12,
+.pr_7_21,
+.pr_7_22,
+.pr_8_0,
+.pr_8_1,
+.pr_9_01,
+.pr_9_1,
+.pr_9_2,
+.pr_10_01,
+.pr_10_02,
+.pr_10_1,
+.pr_10_2,
+.pr_11_11,
+.pr_11_12,
+.pr_11_2,
+.pr_12_01,
+.pr_12_1,
+.pr_12_2,
+.pr_12_3,
+.pr_13_01,
+.pr_13_02,
+.pr_13_1,
+.pr_13_2,
+.pr_13_3,
+.pr_14_01,
+.pr_14_02,
+.pr_14_03,
+.pr_14_1,
+.pr_14_2,
+.pr_14_3,
+.pr_15_01,
+.pr_15_02,
+.pr_15_1,
+.pr_15_2,
+.pr_15_3,
+.pr_15_4,
+.pr_16_1,
+.pr_17_1,
+.pr_17_2,
+.pr_18_01,
+.pr_18_1,
+.pr_18_2 {
+    border: inset 1px #ccc
+}
+
+.pr_7_100,
+.pr_7_200,
+.pr_9_1,
+.pr_9_2,
+.pr_10_01,
+.pr_10_02,
+.pr_10_1,
+.pr_10_2,
+.pr_11_100,
+.pr_11_11,
+.pr_11_12,
+.pr_12_01,
+.pr_12_1,
+.pr_12_2,
+.pr_12_3,
+.pr_13_01,
+.pr_13_02,
+.pr_13_1,
+.pr_13_2,
+.pr_13_3,
+.pr_14_01,
+.pr_14_02,
+.pr_14_03,
+.pr_14_1,
+.pr_14_2,
+.pr_14_3,
+.pr_15_01,
+.pr_15_02,
+.pr_15_1,
+.pr_15_2,
+.pr_15_3,
+.pr_15_4,
+.pr_16_1,
+.pr_17_1,
+.pr_17_2,
+.pr_18_01,
+.pr_18_1,
+.pr_18_2 {
+    float: left
+}
+
+.pr_7_12,
+.pr_7_22,
+.pr_8_0,
+.pr_9_01,
+.pr_10_01,
+.pr_10_02,
+.pr_11_11,
+.pr_12_01,
+.pr_13_01,
+.pr_13_02,
+.pr_14_01,
+.pr_14_02,
+.pr_14_03,
+.pr_15_01,
+.pr_15_02,
+.pr_18_01 {
+    height: 30%
+}
+
+.pr_6_61,
+.pr_5_52,
+.pr_8_1,
+.pr_17_2 {
+    margin-top: 5px
+}
+
+.pr_5_51,
+.pr_6_61,
+.pr_7_11,
+.pr_7_21 {
+    height: 60%
+}
+
+.pr_8_1,
+.pr_9_1,
+.pr_9_2,
+.pr_10_1,
+.pr_10_2,
+.pr_11_12,
+.pr_18_1,
+.pr_18_2 {
+    height: 65%
+}
+
+.pr_9_01,
+.pr_10_01,
+.pr_10_02,
+.pr_11_11,
+.pr_12_01,
+.pr_13_01,
+.pr_13_02,
+.pr_14_01,
+.pr_14_02,
+.pr_14_03,
+.pr_15_01,
+.pr_15_02,
+.pr_18_01 {
+    margin-bottom: 5px
+}
+
+.pr_9_1,
+.pr_10_01,
+.pr_10_1,
+.pr_11_11,
+.pr_11_12,
+.pr_12_1,
+.pr_12_2,
+.pr_13_01,
+.pr_13_1,
+.pr_13_2,
+.pr_14_1,
+.pr_14_2,
+.pr_14_01,
+.pr_14_02,
+.pr_15_01,
+.pr_15_1,
+.pr_15_2,
+.pr_15_3,
+.pr_18_1 {
+    margin-right: 5px
+}
+
+.pr_12_1,
+.pr_12_2,
+.pr_12_3,
+.pr_13_1,
+.pr_13_2,
+.pr_13_3,
+.pr_14_1,
+.pr_14_2,
+.pr_14_3,
+.pr_15_1,
+.pr_15_2,
+.pr_15_3,
+.pr_15_4 {
+    height: 63%
+}
+
+.pr_5_52 {
+    height: 36%
+}
+
+.pr_6_52 {
+    height: 32%;
+    margin-top: 7px
+}
+
+.pr_7_100,
+.pr_7_200 {
+    height: 100%;
+    margin: 5px
+}
+
+.pr_7_200 {
+    float: left;
+    border-left: solid 1px #ccc
+}
+
+.pr_7_11 {
+    margin-bottom: 11px
+}
+
+.pr_7_21 {
+    margin-bottom: 11px;
+    margin-left: 7px
+}
+
+.pr_7_22 {
+    margin-left: 7px
+}
+
+.pr_11_100 {
+    height: 99%
+}
+
+.pr_11_2 {
+    float: right;
+    height: 100%
+}
+
+.pr_16 {
+    border-top-left-radius: 50% 22%;
+    border-top-right-radius: 50% 22%
+}
+
+.pr_16_1 {
+    border: inset 1px #aaa;
+    height: 99%;
+    border-top-left-radius: 50% 22%;
+    border-top-right-radius: 50% 22%
+}
+
+.pr_17 {
+    border-top-left-radius: 50% 22%;
+    border-top-right-radius: 50% 22%
+}
+
+.pr_17_1 {
+    height: 20%;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%
+}
+
+.pr_17_2 {
+    height: 76%
+}
+
+.pr_18 {
+    border-top-left-radius: 50% 32%;
+    border-top-right-radius: 50% 32%
+}
+
+.pr_18_01 {
+    border: inset 1px #aaa;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%
+}
+
+.pr_19_100 {
+    height: 100%;
+    float: left
+}
+
+.pr_19_200 {
+    height: 100%;
+    float: left;
+    margin-left: 7px
+}
+
+.pr_19_11 {
+    height: 60%;
+    margin-bottom: 5px;
+    border: inset 1px #ccc
+}
+
+.pr_19_12 {
+    height: 35%;
+    border: inset 1px #ccc
+}
+
+.pr_19_21 {
+    height: 60%;
+    border: inset 1px #ccc;
+    margin-bottom: 5px
+}
+
+.pr_19_22 {
+    height: 35%;
+    border: inset 1px #ccc;
+    margin-top: 5px
+}
+
+.win_0,
+.win_01,
+.win_02,
+.win_03,
+.win_1,
+.win_2,
+.win_3,
+.win_4 {
+    width: 111%;
+    left: 0;
+    bottom: 0px;
+    height: 111%;
+    position: relative;
+    cursor: pointer
+}
+
+.pr_16_1 .win_1 {
+    width: 111%;
+    margin-top: 38%;
+    left: 0;
+    bottom: 0px;
+    height: 92%;
+    position: relative;
+    cursor: pointer
+}
+
+.win_51 {
+    width: 111%;
+    left: 0;
+    bottom: 0px;
+    height: 187%;
+    position: relative;
+    cursor: pointer
+}
+
+.win_61,
+.win_71,
+.win_72 {
+    width: 111%;
+    left: 0;
+    bottom: 0px;
+    height: 183%;
+    position: relative;
+    cursor: pointer
+}
