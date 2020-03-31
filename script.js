@@ -34,23 +34,20 @@ $(document).bind("ready", function() {
 	}, 30);
 });
 
-function showOrHide(ch, nav) {
-	ch = document.getElementById(ch);
-	nav = document.getElementById(nav);
-	if (ch.checked) {
-		nav.style.display = "flex";
-		  
-	} else {
-		nav.style.display = "none";
-	}
-	
-}
 
 
-$(document).mouseup(function (e) { 
-	var popup = $('.nav__head__menu');
-	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
-		$('.nav__head__menu').fadeOut();
-		document.getElementById('checkbox1').checked = false;
+
+
+	function nav_menu() {
+		$("#nav__head").toggleClass("show");
 	}
-});
+
+	// /* Nav Toggle */
+	// let nav = $("#nav__head");
+	// let navToggle = $("#navToggle");
+
+    // navToggle.on("click", function(event) {
+    //     event.preventDefault();
+
+    //     nav.toggleClass("show");
+    // });

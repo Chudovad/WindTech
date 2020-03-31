@@ -87,12 +87,7 @@ p {
     font-weight: 700;
     text-transform: uppercase;
 }
-.nav__head__menu {
-    display: none;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+
 .nav__link {
     margin-left: 50px;
 
@@ -706,71 +701,57 @@ p {
 
 /* Burger */
 
-.visuallyHidden {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-}
-.hamburger {
-    margin: 0;
-    width: 25px;
-    height: 20px;
-    position: relative;
+
+.burger {
     display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
 }
 
-.hamburger .bar {
-    padding: 0;
-    width: 25px;
-    height: 4px;
-    background-color: #333333;
-    display: block; 
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
-    position: absolute; 
+.burger__item {
+    display: block;
+    width: 28px;
+    height: 3px;
+
+    background-color: #fff;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
 }
 
-.bar1 {
-    top: 0;
-}
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    height: 100%;
 
-.bar2,
-.bar3 {
-    top: 8px;
-}
+    background-color: #fff;
 
-.bar3 {
+    position: absolute;
     right: 0;
+    z-index: 1;
 }
 
-.bar4 {
-    bottom: 0;
+.burger__item:before {
+    width: 30px;
+    top: -8px;
 }
 
-/* HAMBURGER 1 */
-/* .checkbox1:checked + label > .hamburger1 > .bar1{
-    transform: rotate(45deg);
-    transform-origin: 5%;
-    width: 25px
+.burger__item:after {
+    width: 26px;
+    bottom: -8px;
 }
 
-.checkbox1:checked + label > .hamburger1 > .bar2 {
-    transform: translateX(-40px);
-    background-color: transparent;
-}
+input:required + .help-text::before {
+    content: '*Required';
+   }
 
-.checkbox1:checked + label > .hamburger1 > .bar3 {
-    transform: translateX(40px);
-    background-color: transparent;
-}
 
-.checkbox1:checked + label > .hamburger1 > .bar4 {
-    transform-origin: 5%;
-    transform: rotate(-45deg);
-    width: 25px;
-} */
+
 /* Форма */
 /* ////////////////////////// */
 
@@ -1265,8 +1246,7 @@ opacity: 0;
 @media (max-width: 1200px) {
 
     /* Nav */
-    .nav__head,
-    .nav__head__menu {
+    .nav__head {
         display: none;
         width: 100%;
         flex-direction: column;
@@ -1289,9 +1269,8 @@ opacity: 0;
     .nav__link {
         padding: 9px 15px;
     }
-
     /* Burger */
-    .hamburger {
+    .burger {
         display: block;
     }
 
